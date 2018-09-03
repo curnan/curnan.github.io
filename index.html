@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="">
+<html class="theme-next pisces use-motion" lang="">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -93,9 +93,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
-    sidebar: {"position":"right","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -227,26 +227,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br />
-            
-            Schedule
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br />
-            
-            Sitemap
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-commonweal">
           <a href="/404/" rel="section">
             
@@ -262,7 +242,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
             
-            something
+            有料
           </a>
         </li>
       
@@ -304,7 +284,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/myava.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -340,6 +320,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spark/" itemprop="url" rel="index">
+                    <span itemprop="name">Spark</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -392,8 +394,8 @@
 <ol start="6">
 <li>修改配置文件</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">配置spark-env.sh</span></span><br><span class="line">mv spark-env.sh.template spark-env.sh</span><br><span class="line">vi spark-env.sh</span><br><span class="line"><span class="meta"> #</span><span class="bash">配置java环境变量</span></span><br><span class="line"> export JAVA_HOME=/opt/bigdata/jdk1.7.0_67</span><br><span class="line"><span class="meta"> #</span><span class="bash">指定spark老大Master的IP</span></span><br><span class="line"> export SPARK_MASTER_HOST=hdp-node-01</span><br><span class="line"><span class="meta"> #</span><span class="bash">指定spark老大Master的端口</span></span><br><span class="line"> export SPARK_MASTER_PORT=7077</span><br></pre></td></tr></table></figure>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">配置slaves</span></span><br><span class="line">mv slaves.template slaves</span><br><span class="line">vi slaves</span><br><span class="line"><span class="meta">#</span><span class="bash">添加worker的主机名</span></span><br><span class="line"></span><br><span class="line">node2</span><br><span class="line">node3</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>配置spark-env.sh</span><br><span class="line">mv spark-env.sh.template spark-env.sh</span><br><span class="line">vi spark-env.sh</span><br><span class="line"><span class="meta"> #</span>配置java环境变量</span><br><span class="line"> export JAVA_HOME=/opt/bigdata/jdk1.7.0_67</span><br><span class="line"><span class="meta"> #</span>指定spark老大Master的IP</span><br><span class="line"> export SPARK_MASTER_HOST=hdp-node-01</span><br><span class="line"><span class="meta"> #</span>指定spark老大Master的端口</span><br><span class="line"> export SPARK_MASTER_PORT=7077</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">#</span>配置slaves</span><br><span class="line">mv slaves.template slaves</span><br><span class="line">vi slaves</span><br><span class="line"><span class="meta">#</span>添加worker的主机名</span><br><span class="line"></span><br><span class="line">node2</span><br><span class="line">node3</span><br></pre></td></tr></table></figure>
 <ol start="7">
 <li>配置spark的环境变量</li>
 </ol>
@@ -409,11 +411,11 @@
 <ol start="10">
 <li>启动spark集群</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">SPARK_HOME/sbin/start-all.sh</span></span><br><span class="line">spark master的web管理界面地址</span><br><span class="line">http://node1:8080</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span>SPARK_HOME/sbin/start-all.sh</span><br><span class="line">spark master的web管理界面地址</span><br><span class="line">http://node1:8080</span><br></pre></td></tr></table></figure>
 <ol start="11">
 <li>停止spark集群</li>
 </ol>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">SPARK_HOME/sbin/stop-all.sh</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span>SPARK_HOME/sbin/stop-all.sh</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>注意在hadoop集群中同样存在 start-all.sh 和 stop-all.sh 这样的脚本，那么这个时候你在执行的时候就要小心了，最好是通过绝对路径指定对应的框架脚本，然后在运行。</p>
 </blockquote>
@@ -423,7 +425,7 @@
 <blockquote>
 <p>修改配置文件</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim spark-env.sh</span><br><span class="line"><span class="meta">#</span><span class="bash">1、注释掉<span class="built_in">export</span> SPARK_MASTER_HOST=hdp-node-01</span></span><br><span class="line"><span class="meta">#</span><span class="bash">2、在spark-env.sh添加SPARK_DAEMON_JAVA_OPTS，内容如下：</span></span><br><span class="line"></span><br><span class="line">export SPARK_DAEMON_JAVA_OPTS="-Dspark.deploy.recoveryMode=ZOOKEEPER  -Dspark.deploy.zookeeper.url=hdp-node-01:2181,hdp-node-02:2181,hdp-node-03:2181  -Dspark.deploy.zookeeper.dir=/spark"</span><br><span class="line"></span><br><span class="line"> spark.deploy.recoveryMode：恢复模式（Master重新启动的模式）</span><br><span class="line">       有三种：(1)ZooKeeper (2) FileSystem (3)NONE</span><br><span class="line"> spark.deploy.zookeeper.url：ZooKeeper的Server地址</span><br><span class="line"> spark.deploy.zookeeper.dir：保存集群元数据信息的文件、目录</span><br><span class="line">       包括Worker，Driver和Application</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">vim spark-env.sh</span><br><span class="line"><span class="meta">#</span>1、注释掉export SPARK_MASTER_HOST=hdp-node-01</span><br><span class="line"><span class="meta">#</span>2、在spark-env.sh添加SPARK_DAEMON_JAVA_OPTS，内容如下：</span><br><span class="line"></span><br><span class="line">export SPARK_DAEMON_JAVA_OPTS="-Dspark.deploy.recoveryMode=ZOOKEEPER  -Dspark.deploy.zookeeper.url=hdp-node-01:2181,hdp-node-02:2181,hdp-node-03:2181  -Dspark.deploy.zookeeper.dir=/spark"</span><br><span class="line"></span><br><span class="line"> spark.deploy.recoveryMode：恢复模式（Master重新启动的模式）</span><br><span class="line">       有三种：(1)ZooKeeper (2) FileSystem (3)NONE</span><br><span class="line"> spark.deploy.zookeeper.url：ZooKeeper的Server地址</span><br><span class="line"> spark.deploy.zookeeper.dir：保存集群元数据信息的文件、目录</span><br><span class="line">       包括Worker，Driver和Application</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>在普通模式下启动spark集群，只需要在主机上面执行start-all.sh 就可以了。在高可用模式下启动spark集群，先需要在任意一台主节点上启动start-all.sh命令。然后在另外一台主节点上单独启动master。命令start-master.sh。</p>
 </blockquote>
@@ -434,7 +436,7 @@
 <blockquote>
 <p>高可用模式提交任务</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bin/spark-submit \</span><br><span class="line">--class org.apache.spark.examples.SparkPi \</span><br><span class="line">--master spark://hdp-node-01:7077,hdp-node-02:7077,hdp-node-03:7077 \</span><br><span class="line">--executor-memory 1G \</span><br><span class="line">--total-executor-cores 2 \</span><br><span class="line">lib/spark-examples-1.6.2-hadoop2.6.0.jar \</span><br><span class="line">10</span><br><span class="line"><span class="meta">#</span><span class="bash">程序会轮询列表，找到活着的Master</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">bin/spark-submit \</span><br><span class="line">--class org.apache.spark.examples.SparkPi \</span><br><span class="line">--master spark://hdp-node-01:7077,hdp-node-02:7077,hdp-node-03:7077 \</span><br><span class="line">--executor-memory 1G \</span><br><span class="line">--total-executor-cores 2 \</span><br><span class="line">lib/spark-examples-1.6.2-hadoop2.6.0.jar \</span><br><span class="line">10</span><br><span class="line"><span class="meta">#</span>程序会轮询列表，找到活着的Master</span><br></pre></td></tr></table></figure>
 
           
         
@@ -488,7 +490,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="John Doe">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/myava.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -634,7 +636,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <img class="site-author-image" itemprop="image"
-                src="/images/avatar.gif"
+                src="/images/myava.png"
                 alt="John Doe" />
             
               <p class="site-author-name" itemprop="name">John Doe</p>
@@ -655,7 +657,25 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">categories</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
@@ -808,6 +828,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
 
