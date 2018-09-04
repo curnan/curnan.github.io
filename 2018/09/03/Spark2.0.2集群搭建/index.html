@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,7 +94,7 @@
 
 
 
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon_32_32.ico?v=5.1.2" />
 
 
 
@@ -104,15 +104,17 @@
 <meta name="description" content="Spark2.0.2集群搭建步骤 下载对应版本安装包  下载地址spark官网：http://spark.apache.org/downloads.html这里我们使用 spark-2.0.2-bin-hadoop2.7版本.  上传安装包到服务中    先规划一下安装目录  1/root/apps  将安装包解压到目录  1tar -zxvf spark-2.0.2-bin-hadoop2.7.">
 <meta name="keywords" content="Spark">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hello hexo">
-<meta property="og:url" content="http://yoursite.com/2018/09/03/hello-hexo/index.html">
-<meta property="og:site_name" content="Aeon Winter">
+<meta property="og:title" content="Spark2.0.2集群搭建">
+<meta property="og:url" content="http://yoursite.com/2018/09/03/Spark2.0.2集群搭建/index.html">
+<meta property="og:site_name" content="小书童">
 <meta property="og:description" content="Spark2.0.2集群搭建步骤 下载对应版本安装包  下载地址spark官网：http://spark.apache.org/downloads.html这里我们使用 spark-2.0.2-bin-hadoop2.7版本.  上传安装包到服务中    先规划一下安装目录  1/root/apps  将安装包解压到目录  1tar -zxvf spark-2.0.2-bin-hadoop2.7.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-03T14:50:18.846Z">
+<meta property="og:image" content="https://source.unsplash.com/random/800x600">
+<meta property="og:updated_time" content="2018-09-04T08:02:06.351Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hello hexo">
+<meta name="twitter:title" content="Spark2.0.2集群搭建">
 <meta name="twitter:description" content="Spark2.0.2集群搭建步骤 下载对应版本安装包  下载地址spark官网：http://spark.apache.org/downloads.html这里我们使用 spark-2.0.2-bin-hadoop2.7版本.  上传安装包到服务中    先规划一下安装目录  1/root/apps  将安装包解压到目录  1tar -zxvf spark-2.0.2-bin-hadoop2.7.">
+<meta name="twitter:image" content="https://source.unsplash.com/random/800x600">
 
 
 
@@ -120,7 +122,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Mist',
     sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
     tabs: true,
@@ -141,13 +143,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/09/03/hello-hexo/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/09/03/Spark2.0.2集群搭建/"/>
 
 
 
 
 
-  <title>hello hexo | Aeon Winter</title>
+  <title>Spark2.0.2集群搭建 | 小书童</title>
   
 
 
@@ -183,7 +185,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">Aeon Winter</span>
+        <span class="site-title">小书童</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -224,6 +226,16 @@
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
             分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -280,7 +292,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/hello-hexo/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/09/03/Spark2.0.2集群搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Winter">
@@ -289,7 +301,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Aeon Winter">
+      <meta itemprop="name" content="小书童">
     </span>
 
     
@@ -297,7 +309,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hello hexo</h1>
+          <h1 class="post-title" itemprop="name headline">Spark2.0.2集群搭建</h1>
         
 
         <div class="post-meta">
@@ -334,6 +346,17 @@
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
                   <a href="/categories/Spark/" itemprop="url" rel="index">
                     <span itemprop="name">Spark</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spark/部署/" itemprop="url" rel="index">
+                    <span itemprop="name">部署</span>
                   </a>
                 </span>
 
@@ -397,6 +420,22 @@
     <div class="post-body" itemprop="articleBody">
 
       
+      
+        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+          
+          
+            <div class="post-gallery-row">
+              <a class="post-gallery-img fancybox"
+                 href="https://source.unsplash.com/random/800x600" rel="gallery_cjlnfkz9200004cbc8rv2b6tv"
+                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+                <img src="https://source.unsplash.com/random/800x600" itemprop="contentUrl"/>
+              </a>
+            
+          
+
+          
+          </div>
+        </div>
       
 
       
@@ -482,7 +521,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spark/" rel="tag"># Spark</a>
+            <a href="/tags/Spark/" rel="tag"><i class="fa fa-tag"></i> Spark</a>
           
         </div>
       
@@ -504,6 +543,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/04/next主题配置/" rel="prev" title="NexT主题配置">
+                NexT主题配置 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -580,7 +623,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -591,7 +634,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -602,7 +645,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -613,6 +656,19 @@
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/curnan" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
           
         </div>
 
@@ -669,20 +725,21 @@
 
 
 <div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+  灵 <a class="theme-link" href="https://hexo.io">Winter</a> 感
 </div>
 
 <div class="theme-info">
-  主题 -
+  博客 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+   <!-- NexT.Mist -->
+   成长
   </a>
 </div>
 
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共718字</span>
+  <span class="post-count">博客全站共2k字</span>
 </div>
         
 
