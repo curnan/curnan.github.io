@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: "Microsoft YaHei", Verdana, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -475,7 +475,7 @@ pre,
   overflow: auto;
   margin: 20px 0;
   padding: 0;
-  font-size: 11px;
+  font-size: 12px;
   color: #c5c8c6;
   background: #1d1f21;
   line-height: 1.6;
@@ -490,7 +490,7 @@ code {
   color: #555;
   background: #eee;
   border-radius: 3px;
-  font-size: 11px;
+  font-size: 12px;
 }
 pre code {
   padding: 0;
@@ -1216,7 +1216,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: 10px auto 15px;
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #41ffa6;
+  background: #14fbe2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2823,7 +2823,7 @@ hr {
 .post-button a {
   margin: 0 8px 8px 0 !important;
   padding: 0;
-  font-size: 13px;
+  font-size: 14px;
   color: #666;
   background: none;
   border: none;
