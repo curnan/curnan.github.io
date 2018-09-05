@@ -109,12 +109,12 @@
 <meta property="og:site_name" content="小书童">
 <meta property="og:description" content="设置圆形头像并旋转">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.imgur.com/ULCU8v8.jpg">
-<meta property="og:updated_time" content="2018-09-05T01:59:07.548Z">
+<meta property="og:image" content="https://source.unsplash.com/random/1000x700">
+<meta property="og:updated_time" content="2018-09-05T03:53:55.523Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="NexT主题配置">
 <meta name="twitter:description" content="设置圆形头像并旋转">
-<meta name="twitter:image" content="https://i.imgur.com/ULCU8v8.jpg">
+<meta name="twitter:image" content="https://source.unsplash.com/random/1000x700">
 
 
 
@@ -426,9 +426,9 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="https://i.imgur.com/ULCU8v8.jpg" rel="gallery_cjlohvt3k00020cbcvifx18vh"
+                 href="https://source.unsplash.com/random/1000x700" rel="gallery_cjlovyu9b000080bcyccxrkwt"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="https://i.imgur.com/ULCU8v8.jpg" itemprop="contentUrl"/>
+                <img src="https://source.unsplash.com/random/1000x700" itemprop="contentUrl"/>
               </a>
             
           
@@ -441,6 +441,8 @@
       
         <h5 id="设置圆形头像并旋转"><a href="#设置圆形头像并旋转" class="headerlink" title="设置圆形头像并旋转"></a>设置圆形头像并旋转</h5><a id="more"></a>
 <p>找到主题配置文件：</p>
+<div align="center"><img src="https://source.unsplash.com/collection/1401382" alt="这就是测试"></div>
+
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/themes/next/source/css/_common/components/sidebar/sidebar-author.styl</span><br></pre></td></tr></table></figure>
 <p>修改代码如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">.site-author-image &#123;</span><br><span class="line">  display: block;</span><br><span class="line">  margin: 0 auto;</span><br><span class="line">  padding: $site-author-image-padding;</span><br><span class="line">  max-width: $site-author-image-width;</span><br><span class="line">  height: $site-author-image-height;</span><br><span class="line">  border: $site-author-image-border-width solid $site-author-image-border-color;</span><br><span class="line">  border-radius: 60%;</span><br><span class="line">  transition: 2.5s all;  </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.site-author-image:hover &#123;</span><br><span class="line">    transform: rotate(360deg);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">.site-author-name &#123;</span><br><span class="line">  margin: $site-author-name-margin;</span><br><span class="line">  text-align: $site-author-name-align;</span><br><span class="line">  color: $site-author-name-color;</span><br><span class="line">  font-weight: $site-author-name-weight;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.site-description &#123;</span><br><span class="line">  margin-top: $site-description-margin-top;</span><br><span class="line">  text-align: $site-description-align;</span><br><span class="line">  font-size: $site-description-font-size;</span><br><span class="line">  color: $site-description-color;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
