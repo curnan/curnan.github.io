@@ -1826,7 +1826,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5dffff;
+  background: #5effdb;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2759,7 +2759,7 @@ hr {
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title,
@@ -2771,14 +2771,14 @@ hr {
   display: none;
 }
 .posts-expand .post {
-  margin-top: 120px;
+  margin-top: 50px;
 }
 .posts-expand .post:first-child {
   margin-top: 0;
 }
 .posts-expand .post-meta {
   margin-top: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .posts-expand .post-title {
   position: relative;
@@ -2814,10 +2814,10 @@ hr {
   background: #ccc;
 }
 .posts-expand .post-nav {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .post-button {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: left;
 }
 .post-button a {
@@ -2832,7 +2832,7 @@ hr {
 }
 @media (max-width: 767px) {
   .post-button a {
-    font-size: 12px;
+    font-size: 80px;
   }
 }
 @media (min-width: 1600px) {
@@ -2911,8 +2911,8 @@ body {
   background: #fafff0;
 }
 .post {
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   padding: 2px;
   -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
   -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
