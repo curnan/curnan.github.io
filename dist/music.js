@@ -7,8 +7,8 @@ const ap = new APlayer({
     listMaxHeight: 60,
     audio: [
         {
-            name: 'name1',
-            artist: 'artist1',
+            name: 'Better Together',
+            artist: 'Anthem Lights',
             url: 'http://up.mixrnb.com/201711/lz52ZwOdNSmXnz991Dz9.mp3',
             cover: 'https://source.unsplash.com/random/800x800'
         }
