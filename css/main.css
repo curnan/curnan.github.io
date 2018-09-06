@@ -1820,7 +1820,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #61cff2;
+  background: #83c414;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2940,5 +2940,4 @@ body {
 .links-of-author {
   margin-top: 20px;
   margin-bottom: 15px;
-  text-align: center;
 }
