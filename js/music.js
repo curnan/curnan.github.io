@@ -4,7 +4,7 @@ const ap = new APlayer({
 	theme: '#FADFA3',
     loop: 'all',
     volume: 0.5,
-	mutex: true,
+	mutex: false,
     listFolded: true,
     listMaxHeight: 60,
     audio: [
