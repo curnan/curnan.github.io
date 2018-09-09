@@ -26,6 +26,17 @@
 
 
 
+  
+  
+    
+      
+    
+    
+      
+    
+  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
+
 
 
 
@@ -94,21 +105,23 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+  
 
-<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
 
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon-next.png?v=6.3.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-64-next.ico?v=6.3.0">
+<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-24-next.png?v=6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon-next.png?v=6.4.1">
 
 
-  <link rel="mask-icon" href="/uploads/logo.svg?v=6.3.0" color="#222">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-64-next.ico?v=6.4.1">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-24-next.png?v=6.4.1">
+
+
+  <link rel="mask-icon" href="/uploads/logo.svg?v=6.4.1" color="#222">
 
 
 
@@ -123,10 +136,10 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '6.3.0',
+    version: '6.4.1',
     sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
-    fastclick: false,
+    fastclick: true,
     lazyload: false,
     tabs: true,
     motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -272,14 +285,6 @@
     <a href="/about/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
   </li>
-        
-        
-        
-          
-          <li class="menu-item menu-item-archives">
-    <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
-  </li>
 
       
       
@@ -298,9 +303,6 @@
     
 
     
-    
-      
-      
     
       
       
@@ -372,6 +374,21 @@
       </div>
 
       
+	  
+	  
+      
+      
+      
+
+      
+        
+        <div class="collection-title">
+          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
+        </div>
+      
+        
+	  
+	  
         
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -400,6 +417,16 @@
 
 
       
+	  
+	  
+      
+      
+      
+
+      
+        
+	  
+	  
         
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
@@ -468,12 +495,23 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/uploads/myava.png"
-                alt="Small Page Boy" />
+			
+<!-- 点击头像返回首页添加开始1 -->
+<!--code--> 	 <a href="/">
+<!-- 点击头像返回首页添加结束1 -->
+				
+				  <img class="site-author-image" itemprop="image"
+					src="/uploads/myava.png"
+					alt="Small Page Boy" />
+					
+<!-- add -->
+<!--code--> 	 </a>
+<!-- add -->
+				
             
               <p class="site-author-name" itemprop="name">Small Page Boy</p>
               <p class="site-description motion-element" itemprop="description">Love In a Life Time</p>
+
           </div>
 
           
@@ -481,7 +519,7 @@
               
                 <div class="site-state-item site-state-posts">
                 
-                  <a href="/archives/">
+                  <a href="/archives">
                 
                     <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">日志</span>
@@ -547,7 +585,43 @@
                   
                 </span>
               
-            </div>
+			  
+			  
+			  <div class="createalltime">
+				  <span class="time-icon" title="livetime">
+					<i class="fa fa-toggle-on"></i>
+				  </span>
+				<div id="days"></div>
+<script>
+	function show_date_time(){
+		window.setTimeout("show_date_time()", 1000);
+		BirthDay=new Date("05/27/2017 15:13:14");
+		today=new Date();
+		timeold=(today.getTime()-BirthDay.getTime());
+		sectimeold=timeold/1000
+		secondsold=Math.floor(sectimeold);
+		msPerDay=24*60*60*1000
+		e_daysold=timeold/msPerDay
+		daysold=Math.floor(e_daysold);
+		e_hrsold=(e_daysold-daysold)*24;
+		hrsold=setzero(Math.floor(e_hrsold));
+		e_minsold=(e_hrsold-hrsold)*60;
+		minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+		seconds=setzero(Math.floor((e_minsold-minsold)*60));
+		document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
+	}
+		function setzero(i){
+			if (i<10)
+				{i="0" + i};
+			return i;
+		}
+		show_date_time();
+</script>
+
+			  </div>
+
+			<div id="aplayer"></div>
+			</div>
           
 
           
@@ -559,7 +633,32 @@
           
             
           
-          
+          <div id="days"></div>
+<script>
+	function show_date_time(){
+		window.setTimeout("show_date_time()", 1000);
+		BirthDay=new Date("05/27/2017 15:13:14");
+		today=new Date();
+		timeold=(today.getTime()-BirthDay.getTime());
+		sectimeold=timeold/1000
+		secondsold=Math.floor(sectimeold);
+		msPerDay=24*60*60*1000
+		e_daysold=timeold/msPerDay
+		daysold=Math.floor(e_daysold);
+		e_hrsold=(e_daysold-daysold)*24;
+		hrsold=setzero(Math.floor(e_hrsold));
+		e_minsold=(e_hrsold-hrsold)*60;
+		minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+		seconds=setzero(Math.floor((e_minsold-minsold)*60));
+		document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
+	}
+		function setzero(i){
+			if (i<10)
+				{i="0" + i};
+			return i;
+		}
+		show_date_time();
+</script>
 
         </div>
       </section>
@@ -568,7 +667,19 @@
 
       
 
+<!-- aplayer音乐播放器 -->
+	  
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"> 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css.map"></script> 
+		
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script> 
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js.map"></script> 
+		<script type="text/javascript" src="/js/music.js"></script>
+
+<!-- end -->
+  
     </div>
+	
   </aside>
 
 
@@ -606,14 +717,22 @@
   
     <span class="site-uv" title="总访客量">
       <i class="fa fa-street-view"></i>
+	  <i class="fa fa-angle-right"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
     </span>
+  
+  
+  
+    <span class="site-pv" title="heros">
+		十步杀一人 <i class="fa fa-bolt"></i> 千里不留行
+	</span>
   
 
   
     <span class="site-pv" title="总访问量">
-      <i class="fa fa-paw"></i>
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+	  <i class="fa fa-angle-left"></i>
+	  <i class="fa fa-paw"></i>
     </span>
   
 </div>
@@ -658,6 +777,8 @@
 
 
 
+  
+
 
 
 
@@ -681,38 +802,45 @@
 
   
   
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
   
 
   
   
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js"></script>
   
 
 
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
 
 
 
   
-  
-
   
 
   
+  
 
 
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
 
 
 
@@ -1093,6 +1221,77 @@
 
 
   
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
+      background-color: #eee;
+      background-image: linear-gradient(#fcfcfc, #eee);
+      border: 1px solid #d5d5d5;
+      border-radius: 3px;
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      right: 4px;
+      top: 8px;
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function (i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap')
+      $(e).after($wrap)
+      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
+        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+          return $(e).text()
+        }).toArray().join('\n')
+        var ta = document.createElement('textarea')
+        document.body.appendChild(ta)
+        ta.style.position = 'absolute'
+        ta.style.top = '0px'
+        ta.style.left = '0px'
+        ta.value = code
+        ta.select()
+        ta.focus()
+        var result = document.execCommand('copy')
+        document.body.removeChild(ta)
+        
+          if(result)$(this).text('复制成功')
+          else $(this).text('复制失败')
+        
+        $(this).blur()
+      })).on('mouseleave', function (e) {
+        var $b = $(this).find('.copy-btn')
+        setTimeout(function () {
+          $b.text('复制')
+        }, 300)
+      }).append(e)
+    })
+  </script>
+
 
 </body>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
 </html>
