@@ -1899,7 +1899,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a777b1;
+  background: #8aad38;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2900,9 +2900,6 @@ hr {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.header {
-  background-image: linear-gradient(90deg, #f79533 0%, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
-}
 .site-title {
   font-family: 'Lato', "STXingkai", "PingFang SC", "Microsoft YaHei", sans-serif;
 }
@@ -2912,10 +2909,6 @@ hr {
 .posts-expand {
   margin-left: 1px;
   margin-right: 1px;
-}
-.use-motion .post-block {
-  -webkit-box-shadow: -4px 0 0 0 rgba(198,218,226,0.5);
-  border-top-left-radius: 20px;
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
@@ -2972,14 +2965,10 @@ hr {
   text-align: center;
 }
 #days {
-  display: block;
+  display: inline;
   color: #07b39b;
   font-size: 13px;
   margin-top: 15px;
-}
-.sidebar {
-  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
-  background-color: rgba(0,0,0,0.75);
 }
 ::-webkit-scrollbar {
   width: 5px;
