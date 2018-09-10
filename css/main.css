@@ -1899,7 +1899,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #591cff;
+  background: #ffbbc1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2913,6 +2913,12 @@ hr {
 .posts-expand .post-title,
 .posts-expand .post-meta {
   text-align: center;
+}
+.main-inner {
+  margin-top: 50px;
+}
+.category-all-page .category-all-title {
+  text-align: left;
 }
 .posts-expand .post {
   margin-top: 50px;
