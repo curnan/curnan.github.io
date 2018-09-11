@@ -110,25 +110,25 @@
 
 
 
-  <meta name="description" content="春江潮水连海平，海上明月共潮生。 唐·张若虚·春江花月夜">
+  <meta name="description" content="我的config文件的内容分享">
 <meta name="keywords" content="Config">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo-Config">
-<meta property="og:url" content="http://curnan.github.io/2017/10/05/Hexo-config/index.html">
+<meta property="og:url" content="http://curnan.github.io/2017/10/05/MyNexTConfig/index.html">
 <meta property="og:site_name" content="Way Of The Heroes">
-<meta property="og:description" content="春江潮水连海平，海上明月共潮生。 唐·张若虚·春江花月夜">
+<meta property="og:description" content="我的config文件的内容分享">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-09-08T02:06:38.437Z">
+<meta property="og:updated_time" content="2018-09-11T15:37:07.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo-Config">
-<meta name="twitter:description" content="春江潮水连海平，海上明月共潮生。 唐·张若虚·春江花月夜">
+<meta name="twitter:description" content="我的config文件的内容分享">
 
 
 
 
 
 
-  <link rel="canonical" href="http://curnan.github.io/2017/10/05/Hexo-config/"/>
+  <link rel="canonical" href="http://curnan.github.io/2017/10/05/MyNexTConfig/"/>
 
 
 
@@ -326,7 +326,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://curnan.github.io/2017/10/05/Hexo-config/">
+    <link itemprop="mainEntityOfPage" href="http://curnan.github.io/2017/10/05/MyNexTConfig/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Small Page Boy">
@@ -417,6 +417,8 @@
           
 
           
+              <div class="post-description">我的config文件的内容分享</div>
+          
 
         </div>
       </header>
@@ -487,7 +489,7 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/09/04/Hello-World/" rel="next" title="Hello Hexo">
+              <a href="/2015/09/04/HelloHexo/" rel="next" title="Hello Hexo">
                 <i class="fa fa-chevron-left"></i> Hello Hexo
               </a>
             
@@ -497,7 +499,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/05/Hexo-Custom/" rel="prev" title="Hexo-Custom">
+              <a href="/2017/10/05/MyNextCustom/" rel="prev" title="Hexo-Custom">
                 Hexo-Custom <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -1202,75 +1204,6 @@
   
 
   
-  <style>
-    .copy-btn {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid #d5d5d5;
-      border-radius: 3px;
-      user-select: none;
-      outline: 0;
-    }
-
-    .highlight-wrap .copy-btn {
-      transition: opacity .3s ease-in-out;
-      opacity: 0;
-      padding: 2px 6px;
-      position: absolute;
-      right: 4px;
-      top: 8px;
-    }
-
-    .highlight-wrap:hover .copy-btn,
-    .highlight-wrap .copy-btn:focus {
-      opacity: 1
-    }
-
-    .highlight-wrap {
-      position: relative;
-    }
-  </style>
-  <script>
-    $('.highlight').each(function (i, e) {
-      var $wrap = $('<div>').addClass('highlight-wrap')
-      $(e).after($wrap)
-      $wrap.append($('<button>').addClass('copy-btn').append('复制').on('click', function (e) {
-        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
-          return $(e).text()
-        }).toArray().join('\n')
-        var ta = document.createElement('textarea')
-        document.body.appendChild(ta)
-        ta.style.position = 'absolute'
-        ta.style.top = '0px'
-        ta.style.left = '0px'
-        ta.value = code
-        ta.select()
-        ta.focus()
-        var result = document.execCommand('copy')
-        document.body.removeChild(ta)
-        
-          if(result)$(this).text('复制成功')
-          else $(this).text('复制失败')
-        
-        $(this).blur()
-      })).on('mouseleave', function (e) {
-        var $b = $(this).find('.copy-btn')
-        setTimeout(function () {
-          $b.text('复制')
-        }, 300)
-      }).append(e)
-    })
-  </script>
-
 
 </body>
 </html>
