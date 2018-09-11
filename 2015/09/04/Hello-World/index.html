@@ -26,17 +26,6 @@
 
 
 
-  
-  
-    
-      
-    
-    
-      
-    
-  <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
-  <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css" rel="stylesheet">
-
 
 
 
@@ -64,64 +53,26 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-    
-    <link href="https://fonts.cat.net/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
 
 
 
   
 
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 
-<link href="/css/main.css?v=6.4.1" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon-next.png?v=6.4.1">
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-64-next.ico?v=6.4.1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/uploads/apple-touch-icon-next.png?v=6.3.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-24-next.png?v=6.4.1">
+  <link rel="icon" type="image/png" sizes="32x32" href="/uploads/favicon-64-next.ico?v=6.3.0">
 
 
-  <link rel="mask-icon" href="/uploads/logo.svg?v=6.4.1" color="#222">
+  <link rel="icon" type="image/png" sizes="16x16" href="/uploads/favicon-24-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/uploads/logo.svg?v=6.3.0" color="#222">
 
 
 
@@ -136,13 +87,13 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '6.4.1',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: false,
-    fastclick: true,
+    fastclick: false,
     lazyload: false,
-    tabs: true,
-    motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    tabs: false,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
       applicationID: '',
       apiKey: '',
@@ -286,6 +237,14 @@
           <li class="menu-item menu-item-about">
     <a href="/about/" rel="section">
       <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-dreams">
+    <a href="/dreams/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-fire"></i> <br />梦想</a>
   </li>
 
       
@@ -571,16 +530,15 @@
   </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
           </div>
           
-
-  
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTUzNS8xNjA2Mg=="></div>
-    </div>
 
   
 
@@ -621,23 +579,12 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-			
-<!-- 点击头像返回首页添加开始1 -->
-<!--code--> 	 <a href="/">
-<!-- 点击头像返回首页添加结束1 -->
-				
-				  <img class="site-author-image" itemprop="image"
-					src="/uploads/myava.png"
-					alt="Small Page Boy" />
-					
-<!-- add -->
-<!--code--> 	 </a>
-<!-- add -->
-				
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/myava.png"
+                alt="Small Page Boy" />
             
               <p class="site-author-name" itemprop="name">Small Page Boy</p>
               <p class="site-description motion-element" itemprop="description">Love In a Life Time</p>
-
           </div>
 
           
@@ -711,43 +658,7 @@
                   
                 </span>
               
-			  
-			  
-			  <div class="createalltime">
-				  <span class="time-icon" title="livetime">
-					<i class="fa fa-toggle-on"></i>
-				  </span>
-				<div id="days"></div>
-<script>
-	function show_date_time(){
-		window.setTimeout("show_date_time()", 1000);
-		BirthDay=new Date("05/27/2017 15:13:14");
-		today=new Date();
-		timeold=(today.getTime()-BirthDay.getTime());
-		sectimeold=timeold/1000
-		secondsold=Math.floor(sectimeold);
-		msPerDay=24*60*60*1000
-		e_daysold=timeold/msPerDay
-		daysold=Math.floor(e_daysold);
-		e_hrsold=(e_daysold-daysold)*24;
-		hrsold=setzero(Math.floor(e_hrsold));
-		e_minsold=(e_hrsold-hrsold)*60;
-		minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-		seconds=setzero(Math.floor((e_minsold-minsold)*60));
-		document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
-	}
-		function setzero(i){
-			if (i<10)
-				{i="0" + i};
-			return i;
-		}
-		show_date_time();
-</script>
-
-			  </div>
-
-			<div id="aplayer"></div>
-			</div>
+            </div>
           
 
           
@@ -759,32 +670,7 @@
           
             
           
-          <div id="days"></div>
-<script>
-	function show_date_time(){
-		window.setTimeout("show_date_time()", 1000);
-		BirthDay=new Date("05/27/2017 15:13:14");
-		today=new Date();
-		timeold=(today.getTime()-BirthDay.getTime());
-		sectimeold=timeold/1000
-		secondsold=Math.floor(sectimeold);
-		msPerDay=24*60*60*1000
-		e_daysold=timeold/msPerDay
-		daysold=Math.floor(e_daysold);
-		e_hrsold=(e_daysold-daysold)*24;
-		hrsold=setzero(Math.floor(e_hrsold));
-		e_minsold=(e_hrsold-hrsold)*60;
-		minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
-		seconds=setzero(Math.floor((e_minsold-minsold)*60));
-		document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
-	}
-		function setzero(i){
-			if (i<10)
-				{i="0" + i};
-			return i;
-		}
-		show_date_time();
-</script>
+          
 
         </div>
       </section>
@@ -809,19 +695,7 @@
 
       
 
-<!-- aplayer音乐播放器 -->
-	  
-	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css"> 
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.css.map"></script> 
-		
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js"></script> 
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.10.1/APlayer.min.js.map"></script> 
-		<script type="text/javascript" src="/js/music.js"></script>
-
-<!-- end -->
-  
     </div>
-	
   </aside>
 
 
@@ -831,7 +705,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; 2015 – <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2015 &prop; <span itemprop="copyrightYear">2018</span>
   <span class="with-love" id="animate">
     <i class="fa fa-sun-o"></i>
   </span>
@@ -874,7 +748,7 @@
     <span class="site-pv" title="总访问量">
       <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
 	  <i class="fa fa-angle-left"></i>
-	  <i class="fa fa-paw"></i>
+      <i class="fa fa-paw"></i>
     </span>
   
 </div>
@@ -901,10 +775,7 @@
     
 
     
-	
-    
 
-    
   </div>
 
   
@@ -918,8 +789,6 @@
 
 
 
-
-  
 
 
 
@@ -949,11 +818,6 @@
 
   
   
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
-  
-
-  
-  
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
   
 
@@ -966,46 +830,44 @@
   
 
 
-  <script type="text/javascript" src="/js/src/utils.js?v=6.4.1"></script>
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=6.4.1"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.4.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=6.4.1"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
 
 
 
   
+  
 
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.4.1"></script>
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
 
 
 
   
 
 
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
 
   
-    <script type="text/javascript">
-      window.livereOptions = {
-        refer: '2015/09/04/Hello-World/'
-      };
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
   
 
 
@@ -1350,13 +1212,6 @@
   
 
   
-  
-
-  
-  
-
-  
-
 
   
   
@@ -1385,15 +1240,6 @@
   
 
   
-  
-  
-  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
-  <script type="text/javascript">
-  
-    bookmark.scrollToMark('manual', "#更多");
-  
-  </script>
-
 
   
   <style>
@@ -1467,6 +1313,4 @@
 
 
 </body>
-<!-- 页面点击小红心 -->
-<script type="text/javascript" src="/js/src/love.js"></script>
 </html>
