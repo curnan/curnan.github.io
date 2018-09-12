@@ -1,3 +1,13 @@
+const dp = new DPlayer({
+    container: document.getElementById('dplayer'),
+	loop: true,
+	volume: 0.5,
+    video: {
+        url: 'http://link.hhtjim.com/yyt/2464560.mp4',
+        type: 'hls'
+    }
+});
+
 /*
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
@@ -15,7 +25,9 @@ const dp = new DPlayer({
     }
 });
 
+*/
 
+/*
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     video: {
@@ -24,7 +36,7 @@ const dp = new DPlayer({
     }
 });
 */
-
+/*
 const dp = new DPlayer({
     container: document.getElementById('dplayer'),
     video: {
@@ -40,5 +52,5 @@ const dp = new DPlayer({
         }
     }
 });
-
+*/
 
