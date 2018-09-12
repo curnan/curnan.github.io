@@ -111,6 +111,7 @@
 
 
   <meta name="description" content="Love In a Life Time">
+<meta name="keywords" content="大数据,spark,kafka,hadoop,scala">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Way Of The Heroes">
 <meta property="og:url" content="http://curnan.github.io/archives/2015/09/index.html">
@@ -504,6 +505,42 @@
                   
                 </span>
               
+			  
+			  
+			  <div class="createalltime">
+				  <span class="time-icon" title="livetime">
+					<i class="fa fa-toggle-on"></i>
+				  </span>
+				<div id="days"></div>
+<script>
+    function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("05/27/2017 15:13:14");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
+    }
+    function setzero(i){
+        if (i<10)
+            {i="0" + i};
+        return i;
+    }
+    show_date_time();
+</script>
+
+			  </div>
+			  
+			  
             </div>
           
 
@@ -516,7 +553,32 @@
           
             
           
-          
+          <div id="days"></div>
+<script>
+    function show_date_time(){
+        window.setTimeout("show_date_time()", 1000);
+        BirthDay=new Date("05/27/2017 15:13:14");
+        today=new Date();
+        timeold=(today.getTime()-BirthDay.getTime());
+        sectimeold=timeold/1000
+        secondsold=Math.floor(sectimeold);
+        msPerDay=24*60*60*1000
+        e_daysold=timeold/msPerDay
+        daysold=Math.floor(e_daysold);
+        e_hrsold=(e_daysold-daysold)*24;
+        hrsold=setzero(Math.floor(e_hrsold));
+        e_minsold=(e_hrsold-hrsold)*60;
+        minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+        seconds=setzero(Math.floor((e_minsold-minsold)*60));
+        document.getElementById('days').innerHTML=daysold+"."+hrsold+":"+minsold+"′"+seconds+"″";
+    }
+    function setzero(i){
+        if (i<10)
+            {i="0" + i};
+        return i;
+    }
+    show_date_time();
+</script>
 
         </div>
       </section>

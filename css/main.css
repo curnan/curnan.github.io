@@ -1805,7 +1805,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #b6ed13;
+  background: #8121b6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2820,6 +2820,9 @@ hr {
     text-align: center;
   }
 }
+.container {
+  background-color: rgba(250,250,250,0.75);
+}
 .post {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -2868,4 +2871,10 @@ hr {
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
   transition-delay: 0s;
+}
+#days {
+  display: inline;
+}
+.createalltime {
+  margin-top: 5px;
 }
