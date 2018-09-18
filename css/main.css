@@ -1805,7 +1805,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c48677;
+  background: #f2e5ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2821,7 +2821,7 @@ hr {
   }
 }
 .container {
-  background-color: rgba(249,247,236,0.75);
+  background-color: rgba(252,253,253,0.75);
 }
 .post {
   margin-top: 30px;
