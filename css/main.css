@@ -1805,7 +1805,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f90b5c;
+  background: #553d32;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2827,8 +2827,8 @@ hr {
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 4px;
-  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.6);
-  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.6);
+  -webkit-box-shadow: 0 0 6px rgba(202,203,203,0.6);
+  -moz-box-shadow: 0 0 6px rgba(202,203,204,0.6);
   border-top-left-radius: 20px;
 }
 .posts-expand {
@@ -2847,7 +2847,7 @@ hr {
   background-color: #fff;
   border-radius: 3px;
   font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
+  box-shadow: inset 0px 0px 15px 0px rgba(0,0,0,0.25);
   border: none !important;
   transition-property: unset;
   padding: 0px 15px;
@@ -2856,8 +2856,7 @@ hr {
   color: #fff !important;
   border-radius: 3px;
   font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.35);
-  background-image: linear-gradient(90deg, #5e8478 0%, #dedede 25%, #434343 50%, #d2d2d2 75%, #7b7099 100%);
+  background-color: #cfcfcf;
 }
 .footer-inner {
   text-align: center;
@@ -2874,6 +2873,7 @@ hr {
 }
 #days {
   display: inline;
+  color: #d8ecee !important;
 }
 .createalltime {
   margin-top: 5px;
